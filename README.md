@@ -1,30 +1,52 @@
-# React + TypeScript + Vite
+## Car Rental Service Web Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Overview
 
-Currently, two official plugins are available:
+- This project is a web application for a car rental service, allowing users to browse a catalog of cars, apply various filters, and view detailed information about each vehicle. The application is built with modern web technologies, ensuring a seamless and interactive user experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Features
 
-## Expanding the ESLint configuration
+- Car Catalog: Browse a comprehensive catalog of cars with various filtering options.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Filters: Apply filters such as fuel type, year, make, and model to narrow down car options.
 
-- Configure the top-level `parserOptions` property like this:
+- Car Details: View detailed information about each car, including specifications and images.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- Responsive Design: Fully responsive design that works on all devices.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Animated Components: Smooth animations using Framer Motion for a modern look and feel.
+
+# Technologies Used
+
+- React: For building the user interface.
+- React Router: For client-side routing.
+- Framer Motion: For animations.
+- React Select: For custom select components.
+- RapidAPI: For fetching car data.
+- CSS: For styling the components.
+- TypeScript: For type checking and improving code quality.
+
+# Key Components
+
+- App.tsx: Main application component setting up the router and main layout.
+- Header: Navigation header component.
+- MainPages: Main page displaying the car catalog and filters.
+- CustomFilter: Custom select components for filtering cars.
+- Card: Displays car information in a card layout.
+- DetailModal: Modal for displaying detailed car information.
+- CustomButton: Reusable button component.
+- Hero: Hero section on the main page.
+- SearchBar: Search bar for filtering cars by make and model.
+- ShowMore: Button to load more cars.
+
+# API Integration
+
+The application integrates with the Cars by API Ninjas API to fetch car data. Ensure you have a valid RapidAPI key set in your .env file.
+
+# Contact
+
+For any inquiries or support, please contact fmkaragoz@gmail.com
+
+# Screenshot
+
+![Car Rental](/public/Car_Rental.gif)
